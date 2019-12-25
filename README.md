@@ -22,3 +22,7 @@
 **React Router Dom**: DOM bindings for React Router.
 
 - NPM: https://www.npmjs.com/package/react-router-dom
+
+**uigradients**: https://uigradients.com/#EmeraldWater
+
+**Font Awesome CDN**: https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css

@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <Layout fixedHeader>
-        <Header title="Title" scroll>
+        <Header className="header-color" title="Ellie Chen" scroll>
           <Navigation>
             <Link to="/resume">Resume</Link>
             <Link to="/aboutme">About Me</Link>
@@ -16,7 +16,7 @@ function App() {
             <Link to="/contact">Contact</Link>
           </Navigation>
         </Header>
-        <Drawer title="Title">
+        <Drawer title="Ellie Chen">
           <Navigation>
             <Link to="/resume">Resume</Link>
             <Link to="/aboutme">About Me</Link>
