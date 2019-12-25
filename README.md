@@ -36,3 +36,19 @@
 3. **UI Gradients**: https://uigradients.com/#EmeraldWater
 
 4. **Font Awesome CDN**: https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+
+---
+
+### Screenshot
+
+1. Landing Page
+
+![Landing Page](./public/landing.JPG)
+
+2. Projects
+
+![Projetcs Page](./public/projects.JPG)
+
+3. Contact Page
+
+![Contact Page](./public/contact.JPG)

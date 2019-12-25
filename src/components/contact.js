@@ -24,13 +24,13 @@ class Contact extends Component {
                 <ListItem>
                   <ListItemContent>
                     <i className="fa fa-phone-square" aria-hidden="true" />
-                    0475-255-677
+                    0499-999-999
                   </ListItemContent>
                 </ListItem>
                 <ListItem>
                   <ListItemContent>
                     <i className="fa fa-envelope" aria-hidden="true" />
-                    ellie.tt.chen@gmail.com
+                    elliechen@test.com
                   </ListItemContent>
                 </ListItem>
               </List>
