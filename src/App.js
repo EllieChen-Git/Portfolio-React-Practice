@@ -10,7 +10,7 @@ function App() {
       <Layout fixedHeader>
         <Header className="header-color" title="Ellie Chen" scroll>
           <Navigation>
-            <Link to="/resume">Resume</Link>
+            <Link to="/">Home</Link>
             <Link to="/aboutme">About Me</Link>
             <Link to="/projects">Projects</Link>
             <Link to="/contact">Contact</Link>
@@ -18,7 +18,7 @@ function App() {
         </Header>
         <Drawer title="Ellie Chen">
           <Navigation>
-            <Link to="/resume">Resume</Link>
+            <Link to="/">Home</Link>
             <Link to="/aboutme">About Me</Link>
             <Link to="/projects">Projects</Link>
             <Link to="/contact">Contact</Link>

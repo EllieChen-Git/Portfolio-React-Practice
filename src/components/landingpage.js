@@ -12,7 +12,7 @@ class Landing extends Component {
               <h1>Full Stack Web Developer</h1>
 
               <hr />
-              <p>HTML/CSS | JavaScript | Ruby on Rails | MERN Stack</p>
+              <p>HTML/CSS | Ruby on Rails | JavaScript | MERN Stack</p>
               {/* Social Links */}
               <div className="social-links">
                 {/* LinkedIn */}

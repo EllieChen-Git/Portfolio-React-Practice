@@ -8,7 +8,15 @@
 
 2. [Create React App Portfolio website Tutorial - Designing the landing page](https://www.youtube.com/watch?v=n8iA18R76jk&list=WL&index=8)
 
-**Ellie's note**: Overall a easy-to-follow tutorial! The only thing I don't like is that he used a deprecated npm 'React MDL'. Still working on it at the moment. Will give my final verdict after completion.
+3. [Create React App Portfolio website Tutorial - Designing the Projects Page](https://www.youtube.com/watch?v=tXVmcNNZrm8&list=PL3KAvm6JMiowqFTXj3oPQkhP7aCgRHFTm&index=3)
+
+**Ellie's note**:
+
+- Overall a easy-to-follow tutorial! The only thing I don't like is that he used a deprecated npm 'React MDL'.
+
+- Don't think you'll learn much about React with this tutorial. He didn't explain much about the code.
+
+- Still working on it at the moment. Will give my final verdict after completion.
 
 ---
 
