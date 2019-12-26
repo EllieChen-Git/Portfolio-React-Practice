@@ -4,6 +4,18 @@
 
 ---
 
+### Update
+
+- 26/12 Switching from Material Design to Bootstrap (updated navbar to be responsive)
+
+---
+
+### Issues
+
+- 26/12 Toggler works at Projects & Contact page, but doesn't work at Home page
+
+---
+
 ### YouTube Tutorial
 
 1. [Create React App Tutorial - Portfolio website with React Router v4 and Material design](https://www.youtube.com/watch?v=9AboneIxeM8&list=WL&index=13&t=0s)
@@ -36,6 +48,19 @@
 3. **UI Gradients**: https://uigradients.com/#EmeraldWater
 
 4. **Font Awesome CDN**: https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+
+#### Bootstrap (4.4.1)
+
+- **NPM**: https://www.npmjs.com/package/bootstrap
+- **Documentation**: https://getbootstrap.com/
+- The author didn't use Bootstrap in his tutorial. I decided to use Bootstrap & React Bootstrap in this project to practice Bootstrap.
+
+#### React Bootstrap (1.0.0-beta.16)
+
+- **NPM**: https://www.npmjs.com/package/react-bootstrap
+- **Documentation**: https://react-bootstrap.github.io/getting-started/introduction
+
+#### normalize.css
 
 ---
 

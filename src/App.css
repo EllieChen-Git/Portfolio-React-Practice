@@ -1,7 +1,8 @@
 /****************/
 /* Landing Page */
 /****************/
-.header-color {
+
+body {
   background: #348f50; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
