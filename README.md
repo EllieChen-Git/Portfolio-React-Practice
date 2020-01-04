@@ -1,20 +1,36 @@
-# React - Portfolio Site Practice
+# React Practice - Portfolio Site
 
 - React practice following a YouTube tutorial.
 
 ---
 
+### Screenshot
+
+1. Landing Page
+
+![Landing Page](./public/landing.JPG)
+
+2. Projects
+
+![Projects Page](./public/projects.JPG)
+
+3. Contact Page
+
+![Contact Page](./public/contact.JPG)
+
+---
+
 ### Update
 
-- 26/12 Switching from Material Design to Bootstrap (updated navbar to be responsive)
+- 26/12 Switching from Material Design to Bootstrap on app.js (updated navbar to be responsive)
+- 04/01 Built contact form & Implemented SASS
 
 ---
 
+<!--
 ### Issues
 
-- 26/12 Toggler works at Projects & Contact page, but doesn't work at Home page
-
----
+--- -->
 
 ### YouTube Tutorial
 
@@ -34,46 +50,99 @@
 
 ---
 
-### Dependencies
+### Dependencies used by author
 
-1. **React MDL**: React-MDL is a set of React components build on top of Material Design Lite (Warning: This library is now deprecated. It's highly recommended to use Material Design Components instead.)
+**1. React MDL**: React-MDL is a set of React components build on top of Material Design Lite (Warning: This library is now deprecated. It's highly recommended to use Material Design Components instead.)
 
-- Official site: https://tleunen.github.io/react-mdl/
-- GitHub: https://github.com/tleunen/react-mdl
+- **Official site**: https://tleunen.github.io/react-mdl/
+- **GitHub**: https://github.com/tleunen/react-mdl
 
-2. **React Router Dom**: DOM bindings for React Router.
+**2. React Router Dom**: DOM bindings for React Router.
 
-- NPM: https://www.npmjs.com/package/react-router-dom
+- **NPM**: https://www.npmjs.com/package/react-router-dom
 
-3. **UI Gradients**: https://uigradients.com/#EmeraldWater
+**3. UI Gradients**: https://uigradients.com/#EmeraldWater
 
-4. **Font Awesome CDN**: https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+**4. Font Awesome (4.7.0)**:
 
-#### Bootstrap (4.4.1)
+- **CDN**: https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+
+- **Icon list**: https://fontawesome.com/v4.7.0/icons/
+
+### Dependencies added by Ellie
+
+**5. Bootstrap (4.4.1)**
 
 - **NPM**: https://www.npmjs.com/package/bootstrap
 - **Documentation**: https://getbootstrap.com/
 - The author didn't use Bootstrap in his tutorial. I decided to use Bootstrap & React Bootstrap in this project to practice Bootstrap.
 
-#### React Bootstrap (1.0.0-beta.16)
+**6. React Bootstrap (1.0.0-beta.16)**
 
 - **NPM**: https://www.npmjs.com/package/react-bootstrap
 - **Documentation**: https://react-bootstrap.github.io/getting-started/introduction
 
-#### normalize.css
+**7. normalize.css**
 
----
+**8. node-sass**: Node-sass is a library that provides binding for Node.js to LibSass, the C version of the popular stylesheet preprocessor, Sass. It allows you to natively compile .scss files to css at incredible speed and automatically via a connect middleware.
 
-### Screenshot
+- **Create React App - Using a Custom Theme (SASS)**:https://create-react-app.dev/docs/adding-bootstrap/#using-a-custom-theme
+- **NPM**: https://www.npmjs.com/package/node-sass
 
-1. Landing Page
+(1) npm install --save node-sass
+(2) create a file called src/custom.scss
 
-![Landing Page](./public/landing.JPG)
+```javascript
+//@import '~bootstrap/scss/bootstrap.scss';  //this one doesn't work
+@import "../node_modules/bootstrap/scss/bootstrap";
+```
 
-2. Projects
+(3) src\App.js
 
-![Projetcs Page](./public/projects.JPG)
+```javascript
+// import './custom.scss'; //Don't need this one either
+import "./App.css";
+```
 
-3. Contact Page
+(4) Move all the styles from 'src\App.css' to 'src\custom.scss'
 
-![Contact Page](./public/contact.JPG)
+(5) Compilation
+
+```
+sass src/custom.scss src/App.css
+```
+
+(6) Go to public\index.html & remove bootstrap cdn
+
+```javascript
+// <link
+//   rel="stylesheet"
+//   href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+//   integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+//   crossorigin="anonymous"
+// />
+```
+
+(7) How to override bootstrap default styles
+
+- Ref: https://getbootstrap.com/docs/4.4/getting-started/theming/#sass
+- Go to src\custom.scss & write your customised code before the import statement
+
+```javascript
+$theme-colors: (
+  "info": red
+);
+
+// @import "~bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap/scss/bootstrap";
+``
+```
+
+- Re-compile it and it works
+
+```javascript
+// sass src/custom.scss src/App.css
+
+sass --watch src/custom.scss:src/App.css //can use watch command to automatically watch styles changes
+
+```

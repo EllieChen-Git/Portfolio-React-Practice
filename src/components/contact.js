@@ -11,10 +11,9 @@ class Contact extends Component {
             <h2>Ellie Chen</h2>
             <img src="myAvatar.png" alt="avatar" className="avatar-img" />
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              Hello world! I'm Ellie and I'm passionate about coding.
+              <br />I have an inquisitive mind and enjoy turning challenges into
+              adventures!
             </p>
           </Cell>
           <Cell col={6}>
@@ -24,14 +23,20 @@ class Contact extends Component {
               <List>
                 <ListItem>
                   <ListItemContent>
-                    <i className="fa fa-phone-square" aria-hidden="true" />
-                    0475-255-677
+                    <i className="fa fa-envelope" aria-hidden="true" />
+                    ellie.tt.chen@gmail.com
                   </ListItemContent>
                 </ListItem>
                 <ListItem>
                   <ListItemContent>
-                    <i className="fa fa-envelope" aria-hidden="true" />
-                    ellie.tt.chen@gmail.com
+                    <i className="fa fa-github-alt" aria-hidden="true" />
+                    GitHub id: EllieChen-Git
+                  </ListItemContent>
+                </ListItem>
+                <ListItem>
+                  <ListItemContent>
+                    <i className="fa fa-phone-square" aria-hidden="true" />
+                    (AUS +61) 0475-255-677
                   </ListItemContent>
                 </ListItem>
               </List>
@@ -43,16 +48,21 @@ class Contact extends Component {
               <h2>Contact Form</h2>
               <Form.Row>
                 <Form.Group as={Col}>
-                  <Form.Control placeholder="Name" />
+                  <Form.Control required type="text" placeholder="Name" />
                 </Form.Group>
 
                 <Form.Group as={Col}>
-                  <Form.Control type="email" placeholder="Email" />
+                  <Form.Control required type="email" placeholder="Email" />
                 </Form.Group>
               </Form.Row>
 
               <Form.Group controlId="exampleForm.ControlTextarea1">
-                <Form.Control placeholder="Message" as="textarea" rows="3" />
+                <Form.Control
+                  required
+                  placeholder="Message"
+                  as="textarea"
+                  rows="3"
+                />
               </Form.Group>
 
               <Button variant="info" type="submit">
