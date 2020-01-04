@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Grid, Cell, List, ListItem, ListItemContent } from "react-mdl";
+import { Form, Col, Button } from "react-bootstrap";
 
 class Contact extends Component {
   render() {
@@ -17,24 +18,47 @@ class Contact extends Component {
             </p>
           </Cell>
           <Cell col={6}>
-            <h2>Contact Me</h2>
-            <hr />
+            <h2>Contact Details</h2>
+
             <div className="contact-list">
               <List>
                 <ListItem>
                   <ListItemContent>
                     <i className="fa fa-phone-square" aria-hidden="true" />
-                    0499-999-999
+                    0475-255-677
                   </ListItemContent>
                 </ListItem>
                 <ListItem>
                   <ListItemContent>
                     <i className="fa fa-envelope" aria-hidden="true" />
-                    elliechen@test.com
+                    ellie.tt.chen@gmail.com
                   </ListItemContent>
                 </ListItem>
               </List>
             </div>
+          </Cell>
+          <hr />
+          <Cell col={12}>
+            <Form>
+              <h2>Contact Form</h2>
+              <Form.Row>
+                <Form.Group as={Col}>
+                  <Form.Control placeholder="Name" />
+                </Form.Group>
+
+                <Form.Group as={Col}>
+                  <Form.Control type="email" placeholder="Email" />
+                </Form.Group>
+              </Form.Row>
+
+              <Form.Group controlId="exampleForm.ControlTextarea1">
+                <Form.Control placeholder="Message" as="textarea" rows="3" />
+              </Form.Group>
+
+              <Button variant="info" type="submit">
+                Submit
+              </Button>
+            </Form>
           </Cell>
         </Grid>
       </div>

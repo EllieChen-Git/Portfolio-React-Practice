@@ -1,7 +1,3 @@
-/****************/
-/* Landing Page */
-/****************/
-
 body {
   background: #348f50; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -14,6 +10,19 @@ body {
     #56b4d3,
     #348f50
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/****************/
+/* Landing Page */
+/****************/
+
+.landing-body {
+  margin: auto;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 2em;
 }
 
 .landing-grid {
@@ -29,7 +38,7 @@ body {
     #348f50
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
-  position: fixed;
+  /* position: fixed; */
   top: 50px;
   left: 0;
   width: 100%;
@@ -109,7 +118,7 @@ body {
   text-align: center;
   justify-content: center;
   width: 80%;
-  height: 550px;
+  /* height: 100%; */
   background: white;
   color: black;
   margin-bottom: 20px;
@@ -128,9 +137,10 @@ body {
 }
 
 .contact-grid hr {
-  border-top: 5px dotted black;
+  border-top: 3px dotted #348f50;
   width: 75%;
   margin: auto;
+  padding: 5px 0;
 }
 
 /* .contact-list {
