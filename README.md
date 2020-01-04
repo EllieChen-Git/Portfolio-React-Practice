@@ -146,3 +146,11 @@ $theme-colors: (
 sass --watch src/custom.scss:src/App.css //can use watch command to automatically watch styles changes
 
 ```
+
+(8) Before pushing to GitHub, remember add this line to .gitignore!!!
+
+```
+/.sass-cache
+```
+
+Ref: https://stackoverflow.com/questions/34449222/why-isnt-gitignore-ignoring-sass-cache
