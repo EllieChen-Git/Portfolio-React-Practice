@@ -1,8 +1,12 @@
+// Override Bootstrap default styles
 $border-radius: 10rem;
 
 // @import "~bootstrap/scss/bootstrap.scss";
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+/****************************/
+/* Body - Background Colour */
+/****************************/
 body {
   background: #348f50; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -23,7 +27,7 @@ body {
 
 .landing-body {
   margin: auto;
-  position: fixed;
+  // position: fixed;
   width: 100%;
   height: 100%;
   justify-content: center;
@@ -31,17 +35,17 @@ body {
 }
 
 .landing-grid {
-  background: #348f50; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #56b4d3,
-    #348f50
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #56b4d3,
-    #348f50
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  // background: #348f50; /* fallback for old browsers */
+  // background: -webkit-linear-gradient(
+  //   to right,
+  //   #56b4d3,
+  //   #348f50
+  // ); /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(
+  //   to right,
+  //   #56b4d3,
+  //   #348f50
+  // ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
   /* position: fixed; */
   top: 50px;
@@ -82,7 +86,7 @@ body {
   }
 }
 
-.social-links {
+.skill-icons {
   display: flex;
   justify-content: space-between;
   width: 40%;

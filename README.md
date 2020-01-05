@@ -24,13 +24,16 @@
 
 - 26/12 Switching from Material Design to Bootstrap on app.js (updated navbar to be responsive)
 - 04/01 Built contact form & Implemented SASS
+- 05/01 Added social icons on navbar & footer
 
 ---
 
-<!--
-### Issues
+### To-do
 
---- -->
+- Projects page: Change from react-mdl to bootstrap, build project cards
+- Landing: Need to adjust navbar order
+
+---
 
 ### YouTube Tutorial
 

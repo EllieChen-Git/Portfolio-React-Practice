@@ -7773,6 +7773,9 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
+/****************************/
+/* Body - Background Colour */
+/****************************/
 body {
   background: #348f50;
   /* fallback for old browsers */
@@ -7786,19 +7789,12 @@ body {
 /****************/
 .landing-body {
   margin: auto;
-  position: fixed;
   width: 100%;
   height: 100%;
   justify-content: center;
   padding-top: 2em; }
 
 .landing-grid {
-  background: #348f50;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #56b4d3, #348f50);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #56b4d3, #348f50);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
   /* position: fixed; */
   top: 50px;
@@ -7830,12 +7826,12 @@ body {
     font-size: 20px;
     padding: 1em; }
 
-.social-links {
+.skill-icons {
   display: flex;
   justify-content: space-between;
   width: 40%;
   margin: auto; }
-  .social-links i {
+  .skill-icons i {
     color: white;
     font-size: 2em;
     padding-bottom: 8px; }

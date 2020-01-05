@@ -13,7 +13,7 @@ import {
   IconButton
 } from "react-mdl";
 
-class Project extends Component {
+class Projects extends Component {
   constructor(props) {
     super(props);
     this.state = { activeTab: 0 };
@@ -253,4 +253,4 @@ class Project extends Component {
   }
 }
 
-export default Project;
+export default Projects;
